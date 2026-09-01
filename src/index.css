@@ -1,0 +1,242 @@
+@import 'tailwindcss';
+
+/* Tokens are plain custom properties so the theme can be swapped at runtime;
+   @theme inline exposes them to Tailwind's utility generator. */
+@theme inline {
+  --color-plane: var(--csa-plane);
+  --color-surface: var(--csa-surface);
+  --color-surface-2: var(--csa-surface-2);
+  --color-ink: var(--csa-ink);
+  --color-ink-2: var(--csa-ink-2);
+  --color-muted: var(--csa-muted);
+  --color-rule: var(--csa-rule);
+  --color-rule-soft: var(--csa-rule-soft);
+  --color-accent: var(--csa-accent);
+  --color-accent-ink: var(--csa-accent-ink);
+  --color-accent-wash: var(--csa-accent-wash);
+  --color-accent-line: var(--csa-accent-line);
+  --color-on-accent: var(--csa-on-accent);
+  --color-band: var(--csa-band);
+  --color-band-ink: var(--csa-band-ink);
+  --color-band-muted: var(--csa-band-muted);
+
+  --color-s1: var(--csa-s1);
+  --color-s2: var(--csa-s2);
+  --color-s3: var(--csa-s3);
+  --color-s4: var(--csa-s4);
+  --color-s5: var(--csa-s5);
+  --color-s6: var(--csa-s6);
+  --color-s7: var(--csa-s7);
+
+  --color-sl1: var(--csa-sl1);
+  --color-sl2: var(--csa-sl2);
+  --color-sl3: var(--csa-sl3);
+  --color-sl4: var(--csa-sl4);
+
+  --font-sans: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+:root {
+  color-scheme: light;
+  --csa-plane: #eff2ee;
+  --csa-surface: #fbfcfa;
+  --csa-surface-2: #f5f7f3;
+  --csa-ink: #0d1210;
+  --csa-ink-2: #4d5651;
+  --csa-muted: #7d867e;
+  --csa-rule: #dde2da;
+  --csa-rule-soft: #e8ece5;
+  --csa-accent: #12564a;
+  --csa-accent-ink: #0c3f36;
+  --csa-accent-wash: rgb(18 86 74 / 0.07);
+  --csa-accent-line: rgb(18 86 74 / 0.22);
+  --csa-on-accent: #ffffff;
+  --csa-band: #0f1614;
+  --csa-band-ink: #e8ede9;
+  --csa-band-muted: #8ea099;
+  --csa-sl1: #86b6ef;
+  --csa-sl2: #3987e5;
+  --csa-sl3: #256abf;
+  --csa-sl4: #0d366b;
+  --csa-s1: #2a78d6;
+  --csa-s2: #eb6834;
+  --csa-s3: #1baf7a;
+  --csa-s4: #eda100;
+  --csa-s5: #e87ba4;
+  --csa-s6: #008300;
+  --csa-s7: #4a3aa7;
+  --csa-shadow: 0 1px 2px rgb(13 18 16 / 0.05), 0 8px 24px -16px rgb(13 18 16 / 0.25);
+  --csa-shadow-lift: 0 2px 4px rgb(13 18 16 / 0.06), 0 18px 44px -22px rgb(13 18 16 / 0.35);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --csa-plane: #0a0d0c;
+    --csa-surface: #141917;
+    --csa-surface-2: #1a201e;
+    --csa-ink: #f2f5f1;
+    --csa-ink-2: #b4bcb6;
+    --csa-muted: #828b84;
+    --csa-rule: #262d2a;
+    --csa-rule-soft: #1f2523;
+    --csa-accent: #4fbfa4;
+    --csa-accent-ink: #7fd6c0;
+    --csa-accent-wash: rgb(79 191 164 / 0.1);
+    --csa-accent-line: rgb(79 191 164 / 0.28);
+    --csa-on-accent: #052019;
+    --csa-band: #060909;
+    --csa-band-ink: #e8ede9;
+    --csa-band-muted: #7d8f88;
+    --csa-sl1: #184f95;
+    --csa-sl2: #2a78d6;
+    --csa-sl3: #6da7ec;
+    --csa-sl4: #cde2fb;
+    --csa-s1: #3987e5;
+    --csa-s2: #d95926;
+    --csa-s3: #199e70;
+    --csa-s4: #c98500;
+    --csa-s5: #d55181;
+    --csa-s6: #0ca30c;
+    --csa-s7: #9085e9;
+    --csa-shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px -16px rgb(0 0 0 / 0.8);
+    --csa-shadow-lift: 0 2px 4px rgb(0 0 0 / 0.5), 0 18px 44px -22px rgb(0 0 0 / 0.9);
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --csa-plane: #0a0d0c;
+  --csa-surface: #141917;
+  --csa-surface-2: #1a201e;
+  --csa-ink: #f2f5f1;
+  --csa-ink-2: #b4bcb6;
+  --csa-muted: #828b84;
+  --csa-rule: #262d2a;
+  --csa-rule-soft: #1f2523;
+  --csa-accent: #4fbfa4;
+  --csa-accent-ink: #7fd6c0;
+  --csa-accent-wash: rgb(79 191 164 / 0.1);
+  --csa-accent-line: rgb(79 191 164 / 0.28);
+  --csa-on-accent: #052019;
+  --csa-band: #060909;
+  --csa-band-ink: #e8ede9;
+  --csa-band-muted: #7d8f88;
+  --csa-sl1: #184f95;
+  --csa-sl2: #2a78d6;
+  --csa-sl3: #6da7ec;
+  --csa-sl4: #cde2fb;
+  --csa-s1: #3987e5;
+  --csa-s2: #d95926;
+  --csa-s3: #199e70;
+  --csa-s4: #c98500;
+  --csa-s5: #d55181;
+  --csa-s6: #0ca30c;
+  --csa-s7: #9085e9;
+  --csa-shadow: 0 1px 2px rgb(0 0 0 / 0.4), 0 8px 24px -16px rgb(0 0 0 / 0.8);
+  --csa-shadow-lift: 0 2px 4px rgb(0 0 0 / 0.5), 0 18px 44px -22px rgb(0 0 0 / 0.9);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--csa-plane);
+  color: var(--csa-ink);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--csa-accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+::selection {
+  background: var(--csa-accent-line);
+  color: var(--csa-ink);
+}
+
+@utility shadow-card {
+  box-shadow: var(--csa-shadow);
+}
+
+@utility shadow-lift {
+  box-shadow: var(--csa-shadow-lift);
+}
+
+/* Editorial body copy — the serif column used for narrative passages. */
+@utility prose-editorial {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.62;
+  color: var(--csa-ink-2);
+  max-width: 66ch;
+
+  & strong {
+    color: var(--csa-ink);
+    font-weight: 600;
+  }
+}
+
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--csa-accent);
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* The masthead's drifting slick — a slow, very low-contrast field gradient. */
+@keyframes csa-drift {
+  0% {
+    transform: translate3d(-4%, -2%, 0) scale(1.1);
+  }
+  50% {
+    transform: translate3d(4%, 2%, 0) scale(1.18);
+  }
+  100% {
+    transform: translate3d(-4%, -2%, 0) scale(1.1);
+  }
+}
+
+.csa-slick {
+  animation: csa-drift 34s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

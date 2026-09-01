@@ -1,0 +1,1955 @@
+{
+  "pulledAt": "2026-09-01T14:30:15.411Z",
+  "regions": [
+    {
+      "code": "NA",
+      "name": "North America",
+      "color_token": "s1",
+      "sort_order": 1
+    },
+    {
+      "code": "LAT",
+      "name": "Latin America",
+      "color_token": "s2",
+      "sort_order": 2
+    },
+    {
+      "code": "EUR",
+      "name": "Europe",
+      "color_token": "s3",
+      "sort_order": 3
+    },
+    {
+      "code": "RUS",
+      "name": "Russia & Caspian",
+      "color_token": "s4",
+      "sort_order": 4
+    },
+    {
+      "code": "ME",
+      "name": "Middle East",
+      "color_token": "s5",
+      "sort_order": 5
+    },
+    {
+      "code": "AFR",
+      "name": "Africa",
+      "color_token": "s6",
+      "sort_order": 6
+    },
+    {
+      "code": "APAC",
+      "name": "Asia-Pacific",
+      "color_token": "s7",
+      "sort_order": 7
+    }
+  ],
+  "slates": [
+    {
+      "code": "sweet",
+      "name": "Light sweet",
+      "sort_order": 1
+    },
+    {
+      "code": "mixed",
+      "name": "Mixed / medium",
+      "sort_order": 2
+    },
+    {
+      "code": "sour",
+      "name": "Medium sour",
+      "sort_order": 3
+    },
+    {
+      "code": "heavy",
+      "name": "Heavy sour",
+      "sort_order": 4
+    },
+    {
+      "code": "cond",
+      "name": "Condensate-led",
+      "sort_order": 5
+    }
+  ],
+  "countries": [
+    {
+      "id": 1,
+      "name": "China",
+      "region_code": "APAC",
+      "capacity_kbd": 18800,
+      "slate_code": "sour",
+      "slate_detail": "Medium & heavy sour import blend — Saudi Arab Light/Heavy, Russian ESPO & Urals, Iranian Heavy, Iraqi Basrah, Brazilian pre-salt",
+      "note": "World's largest refiner since 2023. Record 11.6 mb/d of crude imports in 2025, of which at least 2.6 mb/d sanctioned. New coastal complexes (Zhoushan, Yulong, Hengli) are deep-conversion and petrochemical-integrated; Shandong teapots are simpler but numerous.",
+      "slug": "china"
+    },
+    {
+      "id": 2,
+      "name": "United States",
+      "region_code": "NA",
+      "capacity_kbd": 18200,
+      "slate_code": "heavy",
+      "slate_detail": "Barbell: domestic light sweet shale (WTI ~40° API) plus imported heavy sour (WCS 20.5°, Maya 21.5°)",
+      "note": "Capacity fell from 18.45 to 18.2 mb/d over 2025 as LyondellBasell Houston and Phillips 66 Los Angeles closed. 130 operable refineries. Gulf Coast averages >13 Nelson — the deepest conversion fleet in the world.",
+      "slug": "united-states"
+    },
+    {
+      "id": 3,
+      "name": "Russia",
+      "region_code": "RUS",
+      "capacity_kbd": 6700,
+      "slate_code": "sour",
+      "slate_detail": "Domestic Urals (31° API, ~1.6% S), Siberian Light, ESPO",
+      "note": "Nameplate only. Essentially every major refinery in European Russia was struck by drones between 2025 and mid-2026; reported losses have reached ~25% of capacity, triggering fuel export bans. Omsk and Angarsk remain unhit.",
+      "slug": "russia"
+    },
+    {
+      "id": 4,
+      "name": "India",
+      "region_code": "APAC",
+      "capacity_kbd": 5100,
+      "slate_code": "heavy",
+      "slate_detail": "Heavy sour by design — Basrah Heavy, Urals, Venezuelan Merey, West African and US grades opportunistically",
+      "note": "Jamnagar (Reliance) runs at a Nelson index near 21, the highest in the world. Nayara's Vadinar plant, 49% Rosneft-owned, was sanctioned by the EU in 2025. India is the marginal buyer of discounted heavy sour.",
+      "slug": "india"
+    },
+    {
+      "id": 5,
+      "name": "South Korea",
+      "region_code": "APAC",
+      "capacity_kbd": 3500,
+      "slate_code": "sour",
+      "slate_detail": "Middle East medium and heavy sour — Saudi, Kuwaiti, UAE — plus condensate splitters",
+      "note": "Four very large, very complex complexes (Ulsan, Yeosu, Onsan, Daesan). Export-oriented; among the highest average complexity of any national fleet.",
+      "slug": "south-korea"
+    },
+    {
+      "id": 6,
+      "name": "Saudi Arabia",
+      "region_code": "ME",
+      "capacity_kbd": 3289,
+      "slate_code": "sour",
+      "slate_detail": "Own Arab Light (33°/1.8% S), Arab Medium and Arab Heavy (27°/2.9% S)",
+      "note": "Aramco has added SATORP, Jazan and equity stakes abroad (Motiva Port Arthur, S-Oil, Fujian). Strategy is to place its own sour barrels into refineries it controls.",
+      "slug": "saudi-arabia"
+    },
+    {
+      "id": 7,
+      "name": "Japan",
+      "region_code": "APAC",
+      "capacity_kbd": 3050,
+      "slate_code": "sour",
+      "slate_detail": "Middle East medium sour, largely Saudi and UAE term barrels",
+      "note": "Structurally shrinking with domestic demand; capacity has fallen by roughly a third since 2000. Moderate complexity, strong desulphurisation but limited coking.",
+      "slug": "japan"
+    },
+    {
+      "id": 8,
+      "name": "Iran",
+      "region_code": "ME",
+      "capacity_kbd": 2460,
+      "slate_code": "sour",
+      "slate_detail": "Domestic Iranian Heavy (30°/~2% S) and Light, plus Persian Gulf Star condensate",
+      "note": "Persian Gulf Star is one of the world's largest condensate refineries. Sanctions constrain catalyst and equipment supply more than crude availability.",
+      "slug": "iran"
+    },
+    {
+      "id": 9,
+      "name": "Brazil",
+      "region_code": "LAT",
+      "capacity_kbd": 2290,
+      "slate_code": "mixed",
+      "slate_detail": "Domestic pre-salt: Tupi/Lula and Búzios, ~29° API but unusually low sulphur (~0.3%)",
+      "note": "Petrobras crude is medium-density yet sweet — an awkward fit for a fleet built for it, and increasingly exported to China while Brazil imports products.",
+      "slug": "brazil"
+    },
+    {
+      "id": 10,
+      "name": "Germany",
+      "region_code": "EUR",
+      "capacity_kbd": 1980,
+      "slate_code": "mixed",
+      "slate_detail": "Post-2022 mix of WTI, Norwegian, Kazakh CPC and West African, replacing Urals",
+      "note": "Schwedt (PCK), under German trusteeship of Rosneft's stake, was engineered for Urals via Druzhba and has struggled since. BP shut a third of Gelsenkirchen; Shell closed Wesseling in 2025.",
+      "slug": "germany"
+    },
+    {
+      "id": 11,
+      "name": "Canada",
+      "region_code": "NA",
+      "capacity_kbd": 1954,
+      "slate_code": "heavy",
+      "slate_detail": "Western Canadian Select (20.5°/3.5% S) and synthetic crude in the west; imported light sweet in the east",
+      "note": "Average Nelson just above 8 — less heavy-capable than the US Midwest despite producing the heavy barrel. Irving Saint John, the largest plant, runs imported grades.",
+      "slug": "canada"
+    },
+    {
+      "id": 12,
+      "name": "Italy",
+      "region_code": "EUR",
+      "capacity_kbd": 1803,
+      "slate_code": "heavy",
+      "slate_detail": "Mediterranean sour grades, Iraqi, Kazakh and Libyan barrels",
+      "note": "ISAB Priolo in Sicily — formerly Lukoil-owned, forcibly sold in 2023 — is one of Europe's few genuinely deep-conversion plants.",
+      "slug": "italy"
+    },
+    {
+      "id": 13,
+      "name": "Spain",
+      "region_code": "EUR",
+      "capacity_kbd": 1590,
+      "slate_code": "heavy",
+      "slate_detail": "Heavy sour including Mexican Maya, plus US WTI and West African grades",
+      "note": "Repsol and Moeve (ex-Cepsa) run one of Europe's most complex fleets: Cartagena and Bilbao have real coking capacity, unusual for the continent.",
+      "slug": "spain"
+    },
+    {
+      "id": 14,
+      "name": "Mexico",
+      "region_code": "LAT",
+      "capacity_kbd": 1558,
+      "slate_code": "heavy",
+      "slate_detail": "Domestic Maya (21.5°/3.6% S), Isthmus and Olmeca",
+      "note": "Chronic underutilisation. The new 340 kb/d Olmeca refinery at Dos Bocas was intended to consume Maya domestically; its slow ramp has kept those barrels flowing to the US Gulf.",
+      "slug": "mexico"
+    },
+    {
+      "id": 15,
+      "name": "Kuwait",
+      "region_code": "ME",
+      "capacity_kbd": 1415,
+      "slate_code": "heavy",
+      "slate_detail": "Kuwait Export Blend (31°/2.5% S) and heavier domestic streams",
+      "note": "Al-Zour (615 kb/d) was purpose-built to convert high-sulphur residue into IMO-compliant low-sulphur fuel oil — one of the most consequential new plants of the decade.",
+      "slug": "kuwait"
+    },
+    {
+      "id": 16,
+      "name": "Venezuela",
+      "region_code": "LAT",
+      "capacity_kbd": 1303,
+      "slate_code": "heavy",
+      "slate_detail": "Extra-heavy Merey 16 and Boscan (~10° API, 5.5% S) blended with imported diluent",
+      "note": "Nameplate is fiction: the Paraguaná complex and Puerto La Cruz have run at a small fraction of capacity for years. The crude itself needs upgraders as much as refineries.",
+      "slug": "venezuela"
+    },
+    {
+      "id": 17,
+      "name": "Singapore",
+      "region_code": "APAC",
+      "capacity_kbd": 1302,
+      "slate_code": "sour",
+      "slate_detail": "Fully imported — Middle East sour, regional sweet, condensate",
+      "note": "Pure refining and petrochemical hub with no domestic crude. Shell's Bukom sale to Chandra Asri/Glencore in 2024 marked the end of an era for Western majors in the region.",
+      "slug": "singapore"
+    },
+    {
+      "id": 18,
+      "name": "United Arab Emirates",
+      "region_code": "ME",
+      "capacity_kbd": 1271,
+      "slate_code": "mixed",
+      "slate_detail": "Murban (40°/0.75% S) — light but slightly sour — and Upper Zakum medium sour",
+      "note": "Ruwais (817 kb/d) is among the largest single sites in the world. Murban's promotion to a futures benchmark in 2021 was a deliberate move to price the UAE's own barrel.",
+      "slug": "united-arab-emirates"
+    },
+    {
+      "id": 19,
+      "name": "Indonesia",
+      "region_code": "APAC",
+      "capacity_kbd": 1259,
+      "slate_code": "mixed",
+      "slate_detail": "Domestic Minas/Duri plus Middle East and West African imports",
+      "note": "Duri is a rarity: heavy (21° API) but almost sulphur-free. Pertamina's fleet is old and under a long-running upgrade programme.",
+      "slug": "indonesia"
+    },
+    {
+      "id": 20,
+      "name": "Thailand",
+      "region_code": "APAC",
+      "capacity_kbd": 1242,
+      "slate_code": "sour",
+      "slate_detail": "Middle East sour with regional sweet blending",
+      "note": "Medium complexity; refiners are integrated with domestic petrochemicals.",
+      "slug": "thailand"
+    },
+    {
+      "id": 21,
+      "name": "Netherlands",
+      "region_code": "EUR",
+      "capacity_kbd": 1241,
+      "slate_code": "mixed",
+      "slate_detail": "North Sea, West African and Middle East grades via Rotterdam",
+      "note": "Shell Pernis (~400 kb/d) is the largest refinery in Europe. Rotterdam is the continent's product blending and storage hub as much as a refining centre.",
+      "slug": "netherlands"
+    },
+    {
+      "id": 22,
+      "name": "Iraq",
+      "region_code": "ME",
+      "capacity_kbd": 1219,
+      "slate_code": "sour",
+      "slate_detail": "Domestic Basrah Medium (29°/2.9% S) and Basrah Heavy (24°/4% S)",
+      "note": "Low average complexity and heavy fuel oil surplus. Basrah Heavy is one of the sourest widely traded grades and prices accordingly.",
+      "slug": "iraq"
+    },
+    {
+      "id": 23,
+      "name": "Taiwan",
+      "region_code": "APAC",
+      "capacity_kbd": 1200,
+      "slate_code": "sour",
+      "slate_detail": "Middle East sour term barrels",
+      "note": "Formosa's Mailiao complex (~540 kb/d) is fully petrochemical-integrated; CPC runs the rest.",
+      "slug": "taiwan"
+    },
+    {
+      "id": 24,
+      "name": "Malaysia",
+      "region_code": "APAC",
+      "capacity_kbd": 1155,
+      "slate_code": "mixed",
+      "slate_detail": "Regional sweet (Tapis, Miri) plus Middle East sour at Pengerang",
+      "note": "Pengerang RAPID (300 kb/d) is modern and complex; Aramco exited its stake in 2025 after years of dispute.",
+      "slug": "malaysia"
+    },
+    {
+      "id": 25,
+      "name": "France",
+      "region_code": "EUR",
+      "capacity_kbd": 1145,
+      "slate_code": "mixed",
+      "slate_detail": "West African, North Sea and Kazakh grades",
+      "note": "TotalEnergies has converted Grandpuits and La Mède away from crude; Gonfreville and Donges carry the remaining fleet.",
+      "slug": "france"
+    },
+    {
+      "id": 26,
+      "name": "Nigeria",
+      "region_code": "AFR",
+      "capacity_kbd": 1030,
+      "slate_code": "sweet",
+      "slate_detail": "Light sweet — Bonny Light (35°/0.15% S), Qua Iboe, plus imported WTI Midland and Libyan Sharara",
+      "note": "Dangote (650 kb/d) accounts for nearly all functioning capacity; the NNPC plants at Port Harcourt, Warri and Kaduna have been largely non-operational for years. Feedstock security, not conversion depth, is the constraint.",
+      "slug": "nigeria"
+    },
+    {
+      "id": 27,
+      "name": "United Kingdom",
+      "region_code": "EUR",
+      "capacity_kbd": 1000,
+      "slate_code": "mixed",
+      "slate_detail": "North Sea light sweet plus imported grades",
+      "note": "Down sharply: Grangemouth (150 kb/d) stopped processing crude in 2025 and Prax Lindsey entered administration. Five refineries remain, led by Fawley and Humber — the latter one of the few dedicated to petroleum coke.",
+      "slug": "united-kingdom"
+    },
+    {
+      "id": 28,
+      "name": "Egypt",
+      "region_code": "AFR",
+      "capacity_kbd": 825,
+      "slate_code": "mixed",
+      "slate_detail": "Domestic Western Desert and Gulf of Suez crude plus imports",
+      "note": "Largest African fleet by plant count; MIDOR at Alexandria is the most modern.",
+      "slug": "egypt"
+    },
+    {
+      "id": 29,
+      "name": "Turkey",
+      "region_code": "ME",
+      "capacity_kbd": 822,
+      "slate_code": "sour",
+      "slate_detail": "Was a large Urals buyer; now a mix of Russian, Iraqi and Kazakh grades",
+      "note": "Tüpraş's İzmit and İzmir plants plus SOCAR's STAR at Aliağa. Turkey became a major re-exporter of products refined from discounted Russian crude after 2022.",
+      "slug": "turkey"
+    },
+    {
+      "id": 30,
+      "name": "Algeria",
+      "region_code": "AFR",
+      "capacity_kbd": 657,
+      "slate_code": "sweet",
+      "slate_detail": "Domestic Saharan Blend (45°/0.09% S) — among the lightest, sweetest crudes traded",
+      "note": "Sonatrach's fleet is simple by design; it does not need conversion depth for this feed.",
+      "slug": "algeria"
+    },
+    {
+      "id": 31,
+      "name": "Belgium",
+      "region_code": "EUR",
+      "capacity_kbd": 645,
+      "slate_code": "mixed",
+      "slate_detail": "North Sea and West African grades via Antwerp",
+      "note": "TotalEnergies Antwerp is one of the more complex plants in northern Europe, tightly integrated with the port's petrochemical cluster.",
+      "slug": "belgium"
+    },
+    {
+      "id": 32,
+      "name": "Argentina",
+      "region_code": "LAT",
+      "capacity_kbd": 600,
+      "slate_code": "sweet",
+      "slate_detail": "Increasingly Vaca Muerta light sweet (Medanito, ~35°/0.5% S) displacing Escalante heavy",
+      "note": "Domestic shale growth is reversing decades of crude imports; refiners are re-tuning toward lighter feed.",
+      "slug": "argentina"
+    },
+    {
+      "id": 33,
+      "name": "Poland",
+      "region_code": "EUR",
+      "capacity_kbd": 583,
+      "slate_code": "sour",
+      "slate_detail": "Saudi Arab Light and Norwegian grades, replacing Urals from 2023",
+      "note": "Orlen's Płock (~327 kb/d) and Gdańsk. One of the more decisive European pivots away from Russian feedstock, achieved largely through Aramco term contracts.",
+      "slug": "poland"
+    },
+    {
+      "id": 34,
+      "name": "Greece",
+      "region_code": "EUR",
+      "capacity_kbd": 528,
+      "slate_code": "sour",
+      "slate_detail": "Mediterranean and Middle East sour, historically Iranian and Russian",
+      "note": "Motor Oil Corinth and HelleniQ Elefsina are relatively complex for their size and export heavily.",
+      "slug": "greece"
+    },
+    {
+      "id": 35,
+      "name": "Colombia",
+      "region_code": "LAT",
+      "capacity_kbd": 501,
+      "slate_code": "heavy",
+      "slate_detail": "Domestic Castilla Blend (18.8°/2% S) and Vasconia",
+      "note": "Cartagena's post-2015 upgrade gave Ecopetrol genuine heavy-crude capability.",
+      "slug": "colombia"
+    },
+    {
+      "id": 36,
+      "name": "Belarus",
+      "region_code": "RUS",
+      "capacity_kbd": 475,
+      "slate_code": "sour",
+      "slate_detail": "Russian Urals via Druzhba",
+      "note": "Mozyr and Naftan were built as export refineries for the Soviet system and remain wholly dependent on Russian crude.",
+      "slug": "belarus"
+    },
+    {
+      "id": 37,
+      "name": "Sweden",
+      "region_code": "EUR",
+      "capacity_kbd": 454,
+      "slate_code": "mixed",
+      "slate_detail": "North Sea and Russian-free imports since 2022",
+      "note": "Preem's Lysekil is the largest and, unusually for Europe, has real conversion depth.",
+      "slug": "sweden"
+    },
+    {
+      "id": 38,
+      "name": "Pakistan",
+      "region_code": "APAC",
+      "capacity_kbd": 450,
+      "slate_code": "mixed",
+      "slate_detail": "Middle East sour, mostly Saudi and UAE term supply",
+      "note": "Small, simple plants with persistent furnace-oil surplus.",
+      "slug": "pakistan"
+    },
+    {
+      "id": 39,
+      "name": "Kazakhstan",
+      "region_code": "RUS",
+      "capacity_kbd": 400,
+      "slate_code": "mixed",
+      "slate_detail": "Domestic Tengiz and Karachaganak light sour; CPC Blend (45°/0.55% S) is exported",
+      "note": "Atyrau, Pavlodar and Shymkent were modernised in the late 2010s. Pavlodar is configured for West Siberian crude.",
+      "slug": "kazakhstan"
+    },
+    {
+      "id": 40,
+      "name": "Bahrain",
+      "region_code": "ME",
+      "capacity_kbd": 380,
+      "slate_code": "sour",
+      "slate_detail": "Domestic Bahrain field plus Saudi Arab Light via pipeline",
+      "note": "The Sitra modernisation lifted capacity and complexity substantially, completing a wave of ~1.4 mb/d of new GCC capacity.",
+      "slug": "bahrain"
+    },
+    {
+      "id": 41,
+      "name": "Libya",
+      "region_code": "AFR",
+      "capacity_kbd": 380,
+      "slate_code": "sweet",
+      "slate_detail": "Domestic Es Sider (37°/0.45% S) and Sharara (43°/0.07% S)",
+      "note": "Zawia and Ras Lanuf are damaged and partly idle; Libya exports crude and imports products. Sharara has become a swing feedstock for Dangote.",
+      "slug": "libya"
+    },
+    {
+      "id": 42,
+      "name": "Vietnam",
+      "region_code": "APAC",
+      "capacity_kbd": 367,
+      "slate_code": "mixed",
+      "slate_detail": "Domestic Bach Ho sweet at Dung Quat; Kuwaiti sour at Nghi Son",
+      "note": "Nghi Son was built around a Kuwaiti crude supply agreement — a supply-security design, not a market one.",
+      "slug": "vietnam"
+    },
+    {
+      "id": 43,
+      "name": "Qatar",
+      "region_code": "ME",
+      "capacity_kbd": 340,
+      "slate_code": "cond",
+      "slate_detail": "Largely condensate from the North Field, plus some crude",
+      "note": "Ras Laffan's condensate splitters dominate; the coming Laffan expansion is naphtha- and jet-oriented.",
+      "slug": "qatar"
+    },
+    {
+      "id": 44,
+      "name": "Curaçao",
+      "region_code": "LAT",
+      "capacity_kbd": 335,
+      "slate_code": "heavy",
+      "slate_detail": "Venezuelan Merey, historically",
+      "note": "The Isla refinery was leased by PDVSA for decades and has been effectively idle since 2019. Nameplate only.",
+      "slug": "curacao"
+    },
+    {
+      "id": 45,
+      "name": "Israel",
+      "region_code": "ME",
+      "capacity_kbd": 301,
+      "slate_code": "mixed",
+      "slate_detail": "Azeri BTC and Kazakh grades via the Mediterranean",
+      "note": "Haifa and Ashdod; Haifa faces long-running pressure to close on environmental grounds.",
+      "slug": "israel"
+    },
+    {
+      "id": 46,
+      "name": "Oman",
+      "region_code": "ME",
+      "capacity_kbd": 300,
+      "slate_code": "sour",
+      "slate_detail": "Oman Blend (33°/1.2% S) plus Kuwaiti crude at Duqm",
+      "note": "OQ8's Duqm refinery (230 kb/d), a joint venture with Kuwait, is the newest deep-conversion plant in the region.",
+      "slug": "oman"
+    },
+    {
+      "id": 47,
+      "name": "Peru",
+      "region_code": "LAT",
+      "capacity_kbd": 283,
+      "slate_code": "heavy",
+      "slate_detail": "Imported heavy and domestic jungle crude",
+      "note": "Talara's rebuild gave Petroperú a modern coker — and a debt problem large enough to threaten the company.",
+      "slug": "peru"
+    },
+    {
+      "id": 48,
+      "name": "Romania",
+      "region_code": "EUR",
+      "capacity_kbd": 252,
+      "slate_code": "sour",
+      "slate_detail": "Domestic Urals-like grades and Black Sea imports",
+      "note": "Petrobrazi and Petromidia; Lukoil's ownership of Petrotel has made it a sanctions pressure point.",
+      "slug": "romania"
+    },
+    {
+      "id": 49,
+      "name": "Ukraine",
+      "region_code": "RUS",
+      "capacity_kbd": 250,
+      "slate_code": "sour",
+      "slate_detail": "Historically Urals and Azeri crude",
+      "note": "Kremenchuk, the only significant refinery, has been repeatedly struck since 2022. Product supply is now overwhelmingly imported.",
+      "slug": "ukraine"
+    },
+    {
+      "id": 50,
+      "name": "Chile",
+      "region_code": "LAT",
+      "capacity_kbd": 242,
+      "slate_code": "mixed",
+      "slate_detail": "Fully imported — Ecuadorian, Brazilian and West African grades",
+      "note": "ENAP's Aconcagua and Bío Bío; no domestic crude of consequence.",
+      "slug": "chile"
+    },
+    {
+      "id": 51,
+      "name": "Turkmenistan",
+      "region_code": "RUS",
+      "capacity_kbd": 240,
+      "slate_code": "sweet",
+      "slate_detail": "Domestic light sweet Caspian crude",
+      "note": "Turkmenbashi is landlocked and export-constrained.",
+      "slug": "turkmenistan"
+    },
+    {
+      "id": 52,
+      "name": "Australia",
+      "region_code": "APAC",
+      "capacity_kbd": 235,
+      "slate_code": "sweet",
+      "slate_detail": "Regional and Middle East light sweet",
+      "note": "Only Geelong (Viva) and Lytton (Ampol) survive after four closures since 2020. Australia now imports the large majority of its fuel.",
+      "slug": "australia"
+    },
+    {
+      "id": 53,
+      "name": "Norway",
+      "region_code": "EUR",
+      "capacity_kbd": 226,
+      "slate_code": "mixed",
+      "slate_detail": "Domestic North Sea grades including Johan Sverdrup (28°/0.8% S)",
+      "note": "Mongstad is the sole significant refinery; Slagen closed in 2021. Sverdrup is medium and slightly sour — heavier than most people assume Norwegian crude to be.",
+      "slug": "norway"
+    },
+    {
+      "id": 54,
+      "name": "Portugal",
+      "region_code": "EUR",
+      "capacity_kbd": 225,
+      "slate_code": "mixed",
+      "slate_detail": "West African and North Sea grades",
+      "note": "Galp's Sines is the only remaining refinery after Matosinhos closed in 2021.",
+      "slug": "portugal"
+    },
+    {
+      "id": 55,
+      "name": "Uzbekistan",
+      "region_code": "RUS",
+      "capacity_kbd": 222,
+      "slate_code": "cond",
+      "slate_detail": "Domestic condensate and light crude",
+      "note": "Bukhara and Fergana; gas-condensate led.",
+      "slug": "uzbekistan"
+    },
+    {
+      "id": 56,
+      "name": "South Africa",
+      "region_code": "AFR",
+      "capacity_kbd": 215,
+      "slate_code": "mixed",
+      "slate_detail": "Historically imported Middle East and West African crude",
+      "note": "Nameplate flatters reality: Sapref is shut, Engen's Durban plant converted to a terminal, and Natref is the main survivor. South Africa is now heavily import-dependent.",
+      "slug": "south-africa"
+    },
+    {
+      "id": 57,
+      "name": "Finland",
+      "region_code": "EUR",
+      "capacity_kbd": 206,
+      "slate_code": "mixed",
+      "slate_detail": "North Sea and non-Russian grades since 2022",
+      "note": "Neste's Porvoo is complex and increasingly oriented toward renewable feedstock alongside crude.",
+      "slug": "finland"
+    },
+    {
+      "id": 58,
+      "name": "Morocco",
+      "region_code": "AFR",
+      "capacity_kbd": 200,
+      "slate_code": "mixed",
+      "slate_detail": "Formerly imported Middle East grades",
+      "note": "Samir, the sole refinery, has been idle since 2015. Morocco imports all its products.",
+      "slug": "morocco"
+    },
+    {
+      "id": 59,
+      "name": "Azerbaijan",
+      "region_code": "RUS",
+      "capacity_kbd": 200,
+      "slate_code": "mixed",
+      "slate_detail": "Domestic Azeri Light (35°/0.15% S)",
+      "note": "Heydar Aliyev refinery at Baku; modernised to Euro-5 specification.",
+      "slug": "azerbaijan"
+    },
+    {
+      "id": 60,
+      "name": "Austria",
+      "region_code": "EUR",
+      "capacity_kbd": 193,
+      "slate_code": "mixed",
+      "slate_detail": "Caspian, North African and Middle East grades via Trieste",
+      "note": "OMV's Schwechat is inland and pipeline-fed from the Adriatic.",
+      "slug": "austria"
+    },
+    {
+      "id": 61,
+      "name": "Bulgaria",
+      "region_code": "EUR",
+      "capacity_kbd": 190,
+      "slate_code": "sour",
+      "slate_detail": "Urals historically; Middle East and Kazakh grades since 2024",
+      "note": "Lukoil Neftohim Burgas held the EU's last major Urals exemption. It was placed under state-appointed management in 2025 — the sharpest example of a refinery's crude design becoming a sovereignty question.",
+      "slug": "bulgaria"
+    },
+    {
+      "id": 62,
+      "name": "Lithuania",
+      "region_code": "EUR",
+      "capacity_kbd": 190,
+      "slate_code": "mixed",
+      "slate_detail": "Seaborne grades via Būtingė since Druzhba supply was cut in 2006",
+      "note": "Orlen Lietuva at Mažeikiai is the Baltic states' only refinery and has been a strategic asset in every regional energy dispute since.",
+      "slug": "lithuania"
+    },
+    {
+      "id": 63,
+      "name": "Denmark",
+      "region_code": "EUR",
+      "capacity_kbd": 181,
+      "slate_code": "mixed",
+      "slate_detail": "North Sea grades",
+      "note": "Fredericia (Shell/Postlane) is the last Danish refinery after Kalundborg's closure was announced.",
+      "slug": "denmark"
+    },
+    {
+      "id": 64,
+      "name": "Philippines",
+      "region_code": "APAC",
+      "capacity_kbd": 180,
+      "slate_code": "mixed",
+      "slate_detail": "Middle East sour and regional sweet",
+      "note": "Petron's Limay plant is the only refinery since Shell converted Tabangao to an import terminal in 2020.",
+      "slug": "philippines"
+    },
+    {
+      "id": 65,
+      "name": "Czechia",
+      "region_code": "EUR",
+      "capacity_kbd": 175,
+      "slate_code": "sour",
+      "slate_detail": "Urals via Druzhba historically; now shifting to TAL pipeline supply from Trieste",
+      "note": "Orlen Unipetrol's Litvínov and Kralupy. The TAL-Plus expansion was explicitly built to end Russian dependence.",
+      "slug": "czechia"
+    },
+    {
+      "id": 66,
+      "name": "Ecuador",
+      "region_code": "LAT",
+      "capacity_kbd": 175,
+      "slate_code": "heavy",
+      "slate_detail": "Domestic Oriente and Napo heavy sour",
+      "note": "Esmeraldas is the largest; chronic maintenance problems keep utilisation low.",
+      "slug": "ecuador"
+    },
+    {
+      "id": 67,
+      "name": "Brunei",
+      "region_code": "APAC",
+      "capacity_kbd": 175,
+      "slate_code": "sweet",
+      "slate_detail": "Regional light sweet",
+      "note": "Hengyi's Pulau Muara Besar plant is Chinese-owned and export-oriented — a Belt and Road refining outpost.",
+      "slug": "brunei"
+    },
+    {
+      "id": 68,
+      "name": "Hungary",
+      "region_code": "EUR",
+      "capacity_kbd": 165,
+      "slate_code": "sour",
+      "slate_detail": "Still Urals via Druzhba under EU exemption",
+      "note": "MOL's Százhalombatta was engineered specifically for Urals; converting it fully to seaborne alternatives is a multi-year capital programme.",
+      "slug": "hungary"
+    },
+    {
+      "id": 69,
+      "name": "Trinidad & Tobago",
+      "region_code": "LAT",
+      "capacity_kbd": 160,
+      "slate_code": "mixed",
+      "slate_detail": "Domestic and imported grades",
+      "note": "Pointe-à-Pierre has been shut since 2018; repeated sale processes have failed.",
+      "slug": "trinidad-tobago"
+    },
+    {
+      "id": 70,
+      "name": "Cuba",
+      "region_code": "LAT",
+      "capacity_kbd": 130,
+      "slate_code": "heavy",
+      "slate_detail": "Venezuelan and domestic heavy crude",
+      "note": "Cienfuegos and Havana run far below nameplate; fuel scarcity is chronic.",
+      "slug": "cuba"
+    },
+    {
+      "id": 71,
+      "name": "Slovakia",
+      "region_code": "EUR",
+      "capacity_kbd": 124,
+      "slate_code": "sour",
+      "slate_detail": "Urals via Druzhba",
+      "note": "MOL's Slovnaft at Bratislava, like Hungary's Danube refinery, was built for Russian crude and still runs it under exemption.",
+      "slug": "slovakia"
+    },
+    {
+      "id": 72,
+      "name": "Angola",
+      "region_code": "AFR",
+      "capacity_kbd": 120,
+      "slate_code": "sweet",
+      "slate_detail": "Domestic Girassol and Cabinda light sweet",
+      "note": "Luanda is small and simple; the long-delayed Lobito and Cabinda projects would change the picture if completed.",
+      "slug": "angola"
+    },
+    {
+      "id": 73,
+      "name": "Sudan",
+      "region_code": "AFR",
+      "capacity_kbd": 100,
+      "slate_code": "mixed",
+      "slate_detail": "Domestic Nile and Dar Blend",
+      "note": "Khartoum refinery has been damaged in the civil war. Dar Blend is unusually acidic, limiting where it can be processed.",
+      "slug": "sudan"
+    },
+    {
+      "id": 74,
+      "name": "Serbia",
+      "region_code": "EUR",
+      "capacity_kbd": 96,
+      "slate_code": "sour",
+      "slate_detail": "Seaborne grades via the JANAF pipeline",
+      "note": "NIS Pančevo is majority Gazprom-owned and was hit by US sanctions in 2025, threatening its crude supply through Croatia.",
+      "slug": "serbia"
+    },
+    {
+      "id": 75,
+      "name": "Croatia",
+      "region_code": "EUR",
+      "capacity_kbd": 90,
+      "slate_code": "mixed",
+      "slate_detail": "Seaborne Mediterranean and Caspian grades",
+      "note": "INA's Rijeka refinery; Sisak has been converted. JANAF's pipeline gives Croatia leverage over landlocked neighbours.",
+      "slug": "croatia"
+    },
+    {
+      "id": 76,
+      "name": "Côte d'Ivoire",
+      "region_code": "AFR",
+      "capacity_kbd": 80,
+      "slate_code": "sweet",
+      "slate_detail": "West African light sweet",
+      "note": "SIR at Abidjan supplies much of francophone West Africa.",
+      "slug": "cote-d-ivoire"
+    },
+    {
+      "id": 77,
+      "name": "Switzerland",
+      "region_code": "EUR",
+      "capacity_kbd": 68,
+      "slate_code": "mixed",
+      "slate_detail": "Pipeline-fed Mediterranean grades",
+      "note": "Cressier is the only remaining refinery.",
+      "slug": "switzerland"
+    },
+    {
+      "id": 78,
+      "name": "Bolivia",
+      "region_code": "LAT",
+      "capacity_kbd": 60,
+      "slate_code": "sweet",
+      "slate_detail": "Domestic light condensate-rich crude",
+      "note": "Small plants at Cochabamba and Santa Cruz; chronic diesel import dependence.",
+      "slug": "bolivia"
+    },
+    {
+      "id": 79,
+      "name": "Uruguay",
+      "region_code": "LAT",
+      "capacity_kbd": 50,
+      "slate_code": "mixed",
+      "slate_detail": "Imported West African and Middle East grades",
+      "note": "ANCAP's La Teja is the country's sole refinery.",
+      "slug": "uruguay"
+    },
+    {
+      "id": 80,
+      "name": "Sri Lanka",
+      "region_code": "APAC",
+      "capacity_kbd": 50,
+      "slate_code": "mixed",
+      "slate_detail": "Middle East and Russian grades",
+      "note": "Sapugaskanda is small and simple; the proposed Hambantota project would dwarf it.",
+      "slug": "sri-lanka"
+    },
+    {
+      "id": 81,
+      "name": "Ghana",
+      "region_code": "AFR",
+      "capacity_kbd": 45,
+      "slate_code": "sweet",
+      "slate_detail": "Domestic Jubilee light sweet",
+      "note": "Tema Oil Refinery operates intermittently.",
+      "slug": "ghana"
+    },
+    {
+      "id": 82,
+      "name": "Bangladesh",
+      "region_code": "APAC",
+      "capacity_kbd": 43,
+      "slate_code": "mixed",
+      "slate_detail": "Middle East sour term supply",
+      "note": "Eastern Refinery in Chattogram; an expansion has been under discussion for a decade.",
+      "slug": "bangladesh"
+    },
+    {
+      "id": 83,
+      "name": "Tunisia",
+      "region_code": "AFR",
+      "capacity_kbd": 34,
+      "slate_code": "mixed",
+      "slate_detail": "Imported and domestic crude",
+      "note": "Bizerte is small and supplies domestic demand only.",
+      "slug": "tunisia"
+    },
+    {
+      "id": 84,
+      "name": "New Zealand",
+      "region_code": "APAC",
+      "capacity_kbd": 0,
+      "slate_code": "sweet",
+      "slate_detail": "—",
+      "note": "Marsden Point ceased refining in 2022 and now operates as an import terminal. Nameplate capacity is zero.",
+      "slug": "new-zealand"
+    }
+  ],
+  "refineries": [
+    {
+      "id": 1,
+      "name": "Jamnagar (DTA + SEZ)",
+      "country_name": "India",
+      "region_code": "APAC",
+      "operator": "Reliance Industries",
+      "capacity_kbd": 1240,
+      "slate_code": "heavy",
+      "slate_detail": "Heaviest, sourest barrels available — Urals, Basrah Heavy, Merey, West African",
+      "nelson_index": 21.1,
+      "note": "The largest and most complex refinery in the world. Built explicitly to arbitrage crude quality discounts.",
+      "slug": "jamnagar-dta-sez"
+    },
+    {
+      "id": 2,
+      "name": "Paraguaná (Amuay + Cardón)",
+      "country_name": "Venezuela",
+      "region_code": "LAT",
+      "operator": "PDVSA",
+      "capacity_kbd": 940,
+      "slate_code": "heavy",
+      "slate_detail": "Merey and Boscan extra-heavy",
+      "nelson_index": null,
+      "note": "Nameplate second-largest in the world; actual runs have been a small fraction for years.",
+      "slug": "paraguana-amuay-cardon"
+    },
+    {
+      "id": 3,
+      "name": "Ulsan",
+      "country_name": "South Korea",
+      "region_code": "APAC",
+      "operator": "SK Energy",
+      "capacity_kbd": 840,
+      "slate_code": "sour",
+      "slate_detail": "Middle East medium and heavy sour",
+      "nelson_index": null,
+      "note": "Korea's largest; deep conversion and petrochemical integration.",
+      "slug": "ulsan"
+    },
+    {
+      "id": 4,
+      "name": "Ruwais",
+      "country_name": "UAE",
+      "region_code": "ME",
+      "operator": "ADNOC Refining",
+      "capacity_kbd": 817,
+      "slate_code": "mixed",
+      "slate_detail": "Murban light sour and Upper Zakum medium sour",
+      "nelson_index": null,
+      "note": "Being expanded toward crude-to-chemicals; among the largest single sites globally.",
+      "slug": "ruwais"
+    },
+    {
+      "id": 5,
+      "name": "Zhoushan (Phases I–II)",
+      "country_name": "China",
+      "region_code": "APAC",
+      "operator": "Zhejiang Petroleum & Chemical",
+      "capacity_kbd": 800,
+      "slate_code": "sour",
+      "slate_detail": "Middle East sour, Russian ESPO",
+      "nelson_index": null,
+      "note": "Private, coastal and petrochemical-first — the template for China's new build.",
+      "slug": "zhoushan-phases-i-ii"
+    },
+    {
+      "id": 6,
+      "name": "Yeosu",
+      "country_name": "South Korea",
+      "region_code": "APAC",
+      "operator": "GS Caltex",
+      "capacity_kbd": 730,
+      "slate_code": "sour",
+      "slate_detail": "Middle East sour",
+      "nelson_index": null,
+      "note": "Very high conversion; large export orientation.",
+      "slug": "yeosu"
+    },
+    {
+      "id": 7,
+      "name": "Onsan",
+      "country_name": "South Korea",
+      "region_code": "APAC",
+      "operator": "S-Oil (Aramco)",
+      "capacity_kbd": 669,
+      "slate_code": "sour",
+      "slate_detail": "Saudi Arab Light and Heavy",
+      "nelson_index": null,
+      "note": "Aramco-controlled outlet for Saudi sour crude; the Shaheen crude-to-chemicals project is attached.",
+      "slug": "onsan"
+    },
+    {
+      "id": 8,
+      "name": "Dangote",
+      "country_name": "Nigeria",
+      "region_code": "AFR",
+      "operator": "Dangote Group",
+      "capacity_kbd": 650,
+      "slate_code": "sweet",
+      "slate_detail": "Nigerian Bonny Light and Qua Iboe, US WTI Midland, Libyan Sharara",
+      "nelson_index": null,
+      "note": "Largest single-train refinery ever built. Turned Nigeria from gasoline importer to product exporter; feedstock supply is the binding constraint.",
+      "slug": "dangote"
+    },
+    {
+      "id": 9,
+      "name": "Galveston Bay",
+      "country_name": "United States",
+      "region_code": "NA",
+      "operator": "Marathon Petroleum",
+      "capacity_kbd": 631,
+      "slate_code": "heavy",
+      "slate_detail": "Heavy sour with light shale blending",
+      "nelson_index": null,
+      "note": "Largest US refinery. Formerly BP Texas City.",
+      "slug": "galveston-bay"
+    },
+    {
+      "id": 10,
+      "name": "Port Arthur",
+      "country_name": "United States",
+      "region_code": "NA",
+      "operator": "Motiva (Saudi Aramco)",
+      "capacity_kbd": 630,
+      "slate_code": "heavy",
+      "slate_detail": "Arab Heavy and other Gulf sour grades",
+      "nelson_index": 13.5,
+      "note": "Aramco's flagship US outlet — the clearest example of a producer buying downstream placement for its own barrel.",
+      "slug": "port-arthur"
+    },
+    {
+      "id": 11,
+      "name": "Al-Zour",
+      "country_name": "Kuwait",
+      "region_code": "ME",
+      "operator": "KIPIC / KPC",
+      "capacity_kbd": 615,
+      "slate_code": "heavy",
+      "slate_detail": "Kuwait Export Blend and heavier domestic streams",
+      "nelson_index": null,
+      "note": "Purpose-built to turn high-sulphur residue into IMO 2020-compliant low-sulphur fuel oil.",
+      "slug": "al-zour"
+    },
+    {
+      "id": 12,
+      "name": "Beaumont",
+      "country_name": "United States",
+      "region_code": "NA",
+      "operator": "ExxonMobil",
+      "capacity_kbd": 609,
+      "slate_code": "heavy",
+      "slate_detail": "Permian light sweet plus heavy sour blend",
+      "nelson_index": null,
+      "note": "Expanded by 250 kb/d in 2023 — one of very few US capacity additions this decade.",
+      "slug": "beaumont"
+    },
+    {
+      "id": 13,
+      "name": "Garyville",
+      "country_name": "United States",
+      "region_code": "NA",
+      "operator": "Marathon Petroleum",
+      "capacity_kbd": 597,
+      "slate_code": "heavy",
+      "slate_detail": "Heavy and medium sour",
+      "nelson_index": null,
+      "note": "Mississippi River plant with deep coking capacity.",
+      "slug": "garyville"
+    },
+    {
+      "id": 14,
+      "name": "Jurong / Pulau Ayer Chawan",
+      "country_name": "Singapore",
+      "region_code": "APAC",
+      "operator": "ExxonMobil",
+      "capacity_kbd": 592,
+      "slate_code": "sour",
+      "slate_detail": "Imported Middle East sour and regional grades",
+      "nelson_index": null,
+      "note": "Singapore's largest; fully integrated with olefins.",
+      "slug": "jurong-pulau-ayer-chawan"
+    },
+    {
+      "id": 15,
+      "name": "Baytown",
+      "country_name": "United States",
+      "region_code": "NA",
+      "operator": "ExxonMobil",
+      "capacity_kbd": 564,
+      "slate_code": "heavy",
+      "slate_detail": "Light shale and heavy sour blend",
+      "nelson_index": null,
+      "note": "One of the oldest large US sites, continuously expanded since 1919.",
+      "slug": "baytown"
+    },
+    {
+      "id": 16,
+      "name": "Ras Tanura",
+      "country_name": "Saudi Arabia",
+      "region_code": "ME",
+      "operator": "Saudi Aramco",
+      "capacity_kbd": 550,
+      "slate_code": "sour",
+      "slate_detail": "Arab Light and Arab Medium",
+      "nelson_index": null,
+      "note": "Aramco's original refinery, adjacent to the world's largest crude export terminal.",
+      "slug": "ras-tanura"
+    },
+    {
+      "id": 17,
+      "name": "Mailiao",
+      "country_name": "Taiwan",
+      "region_code": "APAC",
+      "operator": "Formosa Petrochemical",
+      "capacity_kbd": 540,
+      "slate_code": "sour",
+      "slate_detail": "Middle East sour",
+      "nelson_index": null,
+      "note": "Wholly petrochemical-integrated; the anchor of Taiwan's plastics industry.",
+      "slug": "mailiao"
+    },
+    {
+      "id": 18,
+      "name": "Baton Rouge",
+      "country_name": "United States",
+      "region_code": "NA",
+      "operator": "ExxonMobil",
+      "capacity_kbd": 522,
+      "slate_code": "heavy",
+      "slate_detail": "Heavy sour and domestic light",
+      "nelson_index": null,
+      "note": "Gulf Coast coking plant, among the largest in the US.",
+      "slug": "baton-rouge"
+    },
+    {
+      "id": 19,
+      "name": "SATORP Jubail",
+      "country_name": "Saudi Arabia",
+      "region_code": "ME",
+      "operator": "Aramco / TotalEnergies",
+      "capacity_kbd": 460,
+      "slate_code": "heavy",
+      "slate_detail": "Arab Heavy",
+      "nelson_index": null,
+      "note": "Full-conversion plant designed specifically to upgrade Arab Heavy into clean products.",
+      "slug": "satorp-jubail"
+    },
+    {
+      "id": 20,
+      "name": "Zhenhai",
+      "country_name": "China",
+      "region_code": "APAC",
+      "operator": "Sinopec",
+      "capacity_kbd": 460,
+      "slate_code": "sour",
+      "slate_detail": "Middle East sour and Russian grades",
+      "nelson_index": null,
+      "note": "Sinopec's largest, at Ningbo.",
+      "slug": "zhenhai"
+    },
+    {
+      "id": 21,
+      "name": "Whiting",
+      "country_name": "United States",
+      "region_code": "NA",
+      "operator": "BP",
+      "capacity_kbd": 440,
+      "slate_code": "heavy",
+      "slate_detail": "Western Canadian Select and other Canadian heavy",
+      "nelson_index": null,
+      "note": "Rebuilt for Canadian heavy crude; the Midwest's key coker.",
+      "slug": "whiting"
+    },
+    {
+      "id": 22,
+      "name": "Omsk",
+      "country_name": "Russia",
+      "region_code": "RUS",
+      "operator": "Gazprom Neft",
+      "capacity_kbd": 440,
+      "slate_code": "sour",
+      "slate_detail": "West Siberian crude",
+      "nelson_index": null,
+      "note": "Russia's largest and one of only two major refineries not struck by drones as of mid-2026.",
+      "slug": "omsk"
+    },
+    {
+      "id": 23,
+      "name": "Dalian",
+      "country_name": "China",
+      "region_code": "APAC",
+      "operator": "PetroChina",
+      "capacity_kbd": 410,
+      "slate_code": "sour",
+      "slate_detail": "Russian ESPO and Middle East sour",
+      "nelson_index": null,
+      "note": "Northeastern anchor plant, pipeline-connected to Russian supply.",
+      "slug": "dalian"
+    },
+    {
+      "id": 24,
+      "name": "Pernis",
+      "country_name": "Netherlands",
+      "region_code": "EUR",
+      "operator": "Shell",
+      "capacity_kbd": 404,
+      "slate_code": "mixed",
+      "slate_detail": "North Sea, West African and Middle East blend",
+      "nelson_index": null,
+      "note": "Europe's largest refinery and one of its most complex.",
+      "slug": "pernis"
+    },
+    {
+      "id": 25,
+      "name": "Vadinar",
+      "country_name": "India",
+      "region_code": "APAC",
+      "operator": "Nayara Energy (Rosneft 49%)",
+      "capacity_kbd": 400,
+      "slate_code": "heavy",
+      "slate_detail": "Heavy sour, heavily Russian since 2022",
+      "nelson_index": 11.8,
+      "note": "Sanctioned by the EU in 2025, forcing a shift to domestic sales and non-Western shipping and insurance.",
+      "slug": "vadinar"
+    },
+    {
+      "id": 26,
+      "name": "Hengli Changxing",
+      "country_name": "China",
+      "region_code": "APAC",
+      "operator": "Hengli Petrochemical",
+      "capacity_kbd": 400,
+      "slate_code": "sour",
+      "slate_detail": "Middle East sour and Russian ESPO",
+      "nelson_index": null,
+      "note": "Private crude-to-chemicals complex built in under three years.",
+      "slug": "hengli-changxing"
+    },
+    {
+      "id": 27,
+      "name": "Yulong",
+      "country_name": "China",
+      "region_code": "APAC",
+      "operator": "Yulong Petrochemical",
+      "capacity_kbd": 400,
+      "slate_code": "sour",
+      "slate_detail": "Sanctioned and discounted grades among others",
+      "nelson_index": null,
+      "note": "Shandong's flagship consolidation project, started up in 2025 as older teapot capacity was retired.",
+      "slug": "yulong"
+    },
+    {
+      "id": 28,
+      "name": "Jazan",
+      "country_name": "Saudi Arabia",
+      "region_code": "ME",
+      "operator": "Saudi Aramco",
+      "capacity_kbd": 400,
+      "slate_code": "heavy",
+      "slate_detail": "Arab Heavy and Arab Medium",
+      "nelson_index": null,
+      "note": "Integrated with a gasification and power complex — residue becomes electricity and hydrogen.",
+      "slug": "jazan"
+    },
+    {
+      "id": 29,
+      "name": "Sitra",
+      "country_name": "Bahrain",
+      "region_code": "ME",
+      "operator": "Bapco Energies",
+      "capacity_kbd": 380,
+      "slate_code": "sour",
+      "slate_detail": "Bahrain field crude and Saudi Arab Light",
+      "nelson_index": null,
+      "note": "The Bapco Modernisation Programme lifted both capacity and conversion depth.",
+      "slug": "sitra"
+    },
+    {
+      "id": 30,
+      "name": "Pascagoula",
+      "country_name": "United States",
+      "region_code": "NA",
+      "operator": "Chevron",
+      "capacity_kbd": 369,
+      "slate_code": "heavy",
+      "slate_detail": "Heavy sour, including Latin American grades",
+      "nelson_index": null,
+      "note": "Chevron's largest US plant, with substantial base-oil production.",
+      "slug": "pascagoula"
+    },
+    {
+      "id": 31,
+      "name": "Kirishi",
+      "country_name": "Russia",
+      "region_code": "RUS",
+      "operator": "Surgutneftegas",
+      "capacity_kbd": 355,
+      "slate_code": "sour",
+      "slate_detail": "Urals",
+      "nelson_index": null,
+      "note": "Russia's principal supplier of diesel to the Baltic; struck repeatedly in 2025–26.",
+      "slug": "kirishi"
+    },
+    {
+      "id": 32,
+      "name": "Ryazan",
+      "country_name": "Russia",
+      "region_code": "RUS",
+      "operator": "Rosneft",
+      "capacity_kbd": 342,
+      "slate_code": "sour",
+      "slate_detail": "Urals",
+      "nelson_index": null,
+      "note": "Supplies the Moscow region; primary units disabled by drone strikes in 2026.",
+      "slug": "ryazan"
+    },
+    {
+      "id": 33,
+      "name": "Olmeca (Dos Bocas)",
+      "country_name": "Mexico",
+      "region_code": "LAT",
+      "operator": "Pemex",
+      "capacity_kbd": 340,
+      "slate_code": "heavy",
+      "slate_detail": "Maya heavy sour",
+      "nelson_index": null,
+      "note": "Built to keep Maya at home; ramp-up has been years behind schedule.",
+      "slug": "olmeca-dos-bocas"
+    },
+    {
+      "id": 34,
+      "name": "Deer Park",
+      "country_name": "United States",
+      "region_code": "NA",
+      "operator": "Pemex",
+      "capacity_kbd": 340,
+      "slate_code": "heavy",
+      "slate_detail": "Maya and other heavy sour",
+      "nelson_index": null,
+      "note": "Pemex bought out Shell's half in 2022 — a producer securing conversion capacity abroad.",
+      "slug": "deer-park"
+    },
+    {
+      "id": 35,
+      "name": "Kstovo (Nizhny Novgorod)",
+      "country_name": "Russia",
+      "region_code": "RUS",
+      "operator": "Lukoil",
+      "capacity_kbd": 340,
+      "slate_code": "sour",
+      "slate_detail": "Urals",
+      "nelson_index": null,
+      "note": "Major gasoline supplier to central Russia; repeatedly struck.",
+      "slug": "kstovo-nizhny-novgorod"
+    },
+    {
+      "id": 36,
+      "name": "Płock",
+      "country_name": "Poland",
+      "region_code": "EUR",
+      "operator": "Orlen",
+      "capacity_kbd": 327,
+      "slate_code": "sour",
+      "slate_detail": "Saudi Arab Light and Norwegian grades",
+      "nelson_index": 9.5,
+      "note": "Central Europe's largest. Switched off Urals from 2023 largely via Aramco term supply.",
+      "slug": "plock"
+    },
+    {
+      "id": 37,
+      "name": "Saint John",
+      "country_name": "Canada",
+      "region_code": "NA",
+      "operator": "Irving Oil",
+      "capacity_kbd": 320,
+      "slate_code": "mixed",
+      "slate_detail": "Imported light sweet and some Canadian crude",
+      "nelson_index": null,
+      "note": "Canada's largest refinery — and it faces the Atlantic, not the oil sands.",
+      "slug": "saint-john"
+    },
+    {
+      "id": 38,
+      "name": "ISAB Priolo",
+      "country_name": "Italy",
+      "region_code": "EUR",
+      "operator": "G.O.I. Energy",
+      "capacity_kbd": 320,
+      "slate_code": "heavy",
+      "slate_detail": "Mediterranean and Middle East sour",
+      "nelson_index": null,
+      "note": "Forcibly divested from Lukoil in 2023. One of the few genuinely deep-conversion plants in Europe.",
+      "slug": "isab-priolo"
+    },
+    {
+      "id": 39,
+      "name": "Pengerang RAPID",
+      "country_name": "Malaysia",
+      "region_code": "APAC",
+      "operator": "Petronas",
+      "capacity_kbd": 300,
+      "slate_code": "sour",
+      "slate_detail": "Middle East sour",
+      "nelson_index": null,
+      "note": "Modern, complex and petrochemical-integrated; Aramco exited its stake in 2025.",
+      "slug": "pengerang-rapid"
+    },
+    {
+      "id": 40,
+      "name": "Volgograd",
+      "country_name": "Russia",
+      "region_code": "RUS",
+      "operator": "Lukoil",
+      "capacity_kbd": 300,
+      "slate_code": "sour",
+      "slate_detail": "Urals",
+      "nelson_index": null,
+      "note": "Southern Russia's largest; a repeated drone target.",
+      "slug": "volgograd"
+    },
+    {
+      "id": 41,
+      "name": "Panipat",
+      "country_name": "India",
+      "region_code": "APAC",
+      "operator": "Indian Oil",
+      "capacity_kbd": 300,
+      "slate_code": "sour",
+      "slate_detail": "Mixed sour import slate",
+      "nelson_index": null,
+      "note": "Northern India's main supply point, with a large naphtha cracker attached.",
+      "slug": "panipat"
+    },
+    {
+      "id": 42,
+      "name": "Paradip",
+      "country_name": "India",
+      "region_code": "APAC",
+      "operator": "Indian Oil",
+      "capacity_kbd": 300,
+      "slate_code": "heavy",
+      "slate_detail": "High-sulphur heavy crude",
+      "nelson_index": null,
+      "note": "Designed from the outset for very sour feed, with a full coker.",
+      "slug": "paradip"
+    },
+    {
+      "id": 43,
+      "name": "STAR Aliağa",
+      "country_name": "Turkey",
+      "region_code": "ME",
+      "operator": "SOCAR",
+      "capacity_kbd": 240,
+      "slate_code": "mixed",
+      "slate_detail": "Azeri, Iraqi and Russian grades",
+      "nelson_index": null,
+      "note": "Modern and complex; a key node in Turkey's post-2022 product re-export trade.",
+      "slug": "star-alia-a"
+    },
+    {
+      "id": 44,
+      "name": "Duqm",
+      "country_name": "Oman",
+      "region_code": "ME",
+      "operator": "OQ8 (OQ / KPI)",
+      "capacity_kbd": 230,
+      "slate_code": "sour",
+      "slate_detail": "Kuwaiti and Omani crude",
+      "nelson_index": null,
+      "note": "A joint Omani–Kuwaiti plant on the Arabian Sea, bypassing the Strait of Hormuz.",
+      "slug": "duqm"
+    },
+    {
+      "id": 45,
+      "name": "Schwedt (PCK)",
+      "country_name": "Germany",
+      "region_code": "EUR",
+      "operator": "PCK (Rosneft stake in trusteeship)",
+      "capacity_kbd": 226,
+      "slate_code": "mixed",
+      "slate_detail": "Kazakh, Norwegian and US grades replacing Urals",
+      "nelson_index": null,
+      "note": "Built for Druzhba pipeline Urals; its post-2022 feedstock problem is a live German political issue.",
+      "slug": "schwedt-pck"
+    },
+    {
+      "id": 46,
+      "name": "Sines",
+      "country_name": "Portugal",
+      "region_code": "EUR",
+      "operator": "Galp",
+      "capacity_kbd": 226,
+      "slate_code": "mixed",
+      "slate_detail": "West African and North Sea grades",
+      "nelson_index": null,
+      "note": "Portugal's only refinery since Matosinhos closed.",
+      "slug": "sines"
+    },
+    {
+      "id": 47,
+      "name": "Mongstad",
+      "country_name": "Norway",
+      "region_code": "EUR",
+      "operator": "Equinor",
+      "capacity_kbd": 226,
+      "slate_code": "mixed",
+      "slate_detail": "North Sea grades including Johan Sverdrup",
+      "nelson_index": null,
+      "note": "Norway's sole significant refinery.",
+      "slug": "mongstad"
+    },
+    {
+      "id": 48,
+      "name": "Százhalombatta (Danube)",
+      "country_name": "Hungary",
+      "region_code": "EUR",
+      "operator": "MOL",
+      "capacity_kbd": 165,
+      "slate_code": "sour",
+      "slate_detail": "Urals via Druzhba",
+      "nelson_index": null,
+      "note": "Still running Russian crude under EU exemption; conversion to seaborne supply is a multi-year programme.",
+      "slug": "szazhalombatta-danube"
+    },
+    {
+      "id": 49,
+      "name": "Litvínov",
+      "country_name": "Czechia",
+      "region_code": "EUR",
+      "operator": "Orlen Unipetrol",
+      "capacity_kbd": 108,
+      "slate_code": "sour",
+      "slate_detail": "Shifting from Druzhba Urals to TAL pipeline crude from Trieste",
+      "nelson_index": null,
+      "note": "The TAL-Plus capacity expansion was built expressly to end Czech dependence on Russian crude.",
+      "slug": "litvinov"
+    }
+  ],
+  "grades": [
+    {
+      "id": 1,
+      "name": "Tapis",
+      "api_gravity": 45.5,
+      "sulphur_pct": 0.03,
+      "origin": "Malaysia",
+      "sanctioned": false
+    },
+    {
+      "id": 2,
+      "name": "Saharan Blend",
+      "api_gravity": 45,
+      "sulphur_pct": 0.09,
+      "origin": "Algeria",
+      "sanctioned": false
+    },
+    {
+      "id": 3,
+      "name": "CPC Blend",
+      "api_gravity": 45,
+      "sulphur_pct": 0.55,
+      "origin": "Kazakhstan",
+      "sanctioned": false
+    },
+    {
+      "id": 4,
+      "name": "Sharara",
+      "api_gravity": 43,
+      "sulphur_pct": 0.07,
+      "origin": "Libya",
+      "sanctioned": false
+    },
+    {
+      "id": 5,
+      "name": "WTI Midland",
+      "api_gravity": 41,
+      "sulphur_pct": 0.3,
+      "origin": "United States",
+      "sanctioned": false
+    },
+    {
+      "id": 6,
+      "name": "Murban",
+      "api_gravity": 40,
+      "sulphur_pct": 0.75,
+      "origin": "UAE",
+      "sanctioned": false
+    },
+    {
+      "id": 7,
+      "name": "Forties",
+      "api_gravity": 40,
+      "sulphur_pct": 0.6,
+      "origin": "North Sea",
+      "sanctioned": false
+    },
+    {
+      "id": 8,
+      "name": "Olmeca",
+      "api_gravity": 38.5,
+      "sulphur_pct": 0.8,
+      "origin": "Mexico",
+      "sanctioned": false
+    },
+    {
+      "id": 9,
+      "name": "Brent (dated)",
+      "api_gravity": 38.3,
+      "sulphur_pct": 0.4,
+      "origin": "North Sea",
+      "sanctioned": false
+    },
+    {
+      "id": 10,
+      "name": "Es Sider",
+      "api_gravity": 37,
+      "sulphur_pct": 0.45,
+      "origin": "Libya",
+      "sanctioned": false
+    },
+    {
+      "id": 11,
+      "name": "Qua Iboe",
+      "api_gravity": 36,
+      "sulphur_pct": 0.13,
+      "origin": "Nigeria",
+      "sanctioned": false
+    },
+    {
+      "id": 12,
+      "name": "Bonny Light",
+      "api_gravity": 35.4,
+      "sulphur_pct": 0.15,
+      "origin": "Nigeria",
+      "sanctioned": false
+    },
+    {
+      "id": 13,
+      "name": "Minas",
+      "api_gravity": 35,
+      "sulphur_pct": 0.08,
+      "origin": "Indonesia",
+      "sanctioned": false
+    },
+    {
+      "id": 14,
+      "name": "Azeri Light",
+      "api_gravity": 35,
+      "sulphur_pct": 0.15,
+      "origin": "Azerbaijan",
+      "sanctioned": false
+    },
+    {
+      "id": 15,
+      "name": "ESPO",
+      "api_gravity": 34.8,
+      "sulphur_pct": 0.62,
+      "origin": "Russia",
+      "sanctioned": true
+    },
+    {
+      "id": 16,
+      "name": "Medanito",
+      "api_gravity": 34.7,
+      "sulphur_pct": 0.48,
+      "origin": "Argentina",
+      "sanctioned": false
+    },
+    {
+      "id": 17,
+      "name": "Upper Zakum",
+      "api_gravity": 34,
+      "sulphur_pct": 1.7,
+      "origin": "UAE",
+      "sanctioned": false
+    },
+    {
+      "id": 18,
+      "name": "Oman Blend",
+      "api_gravity": 33,
+      "sulphur_pct": 1.2,
+      "origin": "Oman",
+      "sanctioned": false
+    },
+    {
+      "id": 19,
+      "name": "Arab Light",
+      "api_gravity": 33,
+      "sulphur_pct": 1.8,
+      "origin": "Saudi Arabia",
+      "sanctioned": false
+    },
+    {
+      "id": 20,
+      "name": "Isthmus",
+      "api_gravity": 32.5,
+      "sulphur_pct": 1.8,
+      "origin": "Mexico",
+      "sanctioned": false
+    },
+    {
+      "id": 21,
+      "name": "Girassol",
+      "api_gravity": 31.5,
+      "sulphur_pct": 0.33,
+      "origin": "Angola",
+      "sanctioned": false
+    },
+    {
+      "id": 22,
+      "name": "Dubai",
+      "api_gravity": 31,
+      "sulphur_pct": 2,
+      "origin": "UAE",
+      "sanctioned": false
+    },
+    {
+      "id": 23,
+      "name": "Kuwait Export",
+      "api_gravity": 31,
+      "sulphur_pct": 2.52,
+      "origin": "Kuwait",
+      "sanctioned": false
+    },
+    {
+      "id": 24,
+      "name": "Urals",
+      "api_gravity": 31,
+      "sulphur_pct": 1.6,
+      "origin": "Russia",
+      "sanctioned": true
+    },
+    {
+      "id": 25,
+      "name": "Arab Medium",
+      "api_gravity": 30.5,
+      "sulphur_pct": 2.5,
+      "origin": "Saudi Arabia",
+      "sanctioned": false
+    },
+    {
+      "id": 26,
+      "name": "Iranian Heavy",
+      "api_gravity": 30,
+      "sulphur_pct": 1.95,
+      "origin": "Iran",
+      "sanctioned": true
+    },
+    {
+      "id": 27,
+      "name": "Tupi (Lula)",
+      "api_gravity": 29,
+      "sulphur_pct": 0.35,
+      "origin": "Brazil",
+      "sanctioned": false
+    },
+    {
+      "id": 28,
+      "name": "Basrah Medium",
+      "api_gravity": 29,
+      "sulphur_pct": 2.9,
+      "origin": "Iraq",
+      "sanctioned": false
+    },
+    {
+      "id": 29,
+      "name": "Johan Sverdrup",
+      "api_gravity": 28,
+      "sulphur_pct": 0.8,
+      "origin": "Norway",
+      "sanctioned": false
+    },
+    {
+      "id": 30,
+      "name": "Arab Heavy",
+      "api_gravity": 27,
+      "sulphur_pct": 2.9,
+      "origin": "Saudi Arabia",
+      "sanctioned": false
+    },
+    {
+      "id": 31,
+      "name": "Basrah Heavy",
+      "api_gravity": 24,
+      "sulphur_pct": 4,
+      "origin": "Iraq",
+      "sanctioned": false
+    },
+    {
+      "id": 32,
+      "name": "Vasconia",
+      "api_gravity": 24,
+      "sulphur_pct": 0.85,
+      "origin": "Colombia",
+      "sanctioned": false
+    },
+    {
+      "id": 33,
+      "name": "Maya",
+      "api_gravity": 21.5,
+      "sulphur_pct": 3.6,
+      "origin": "Mexico",
+      "sanctioned": false
+    },
+    {
+      "id": 34,
+      "name": "Duri",
+      "api_gravity": 21,
+      "sulphur_pct": 0.2,
+      "origin": "Indonesia",
+      "sanctioned": false
+    },
+    {
+      "id": 35,
+      "name": "WCS",
+      "api_gravity": 20.5,
+      "sulphur_pct": 3.5,
+      "origin": "Canada",
+      "sanctioned": false
+    },
+    {
+      "id": 36,
+      "name": "Castilla Blend",
+      "api_gravity": 18.8,
+      "sulphur_pct": 1.97,
+      "origin": "Colombia",
+      "sanctioned": false
+    },
+    {
+      "id": 37,
+      "name": "Merey 16",
+      "api_gravity": 16,
+      "sulphur_pct": 2.5,
+      "origin": "Venezuela",
+      "sanctioned": true
+    },
+    {
+      "id": 38,
+      "name": "Altamira",
+      "api_gravity": 16,
+      "sulphur_pct": 5.7,
+      "origin": "Mexico",
+      "sanctioned": false
+    },
+    {
+      "id": 39,
+      "name": "Boscan",
+      "api_gravity": 10.1,
+      "sulphur_pct": 5.5,
+      "origin": "Venezuela",
+      "sanctioned": true
+    }
+  ],
+  "sources": [
+    {
+      "id": 1,
+      "title": "Energy Factbook — refining capacity by country (Energy Institute Statistical Review)",
+      "url": "https://energyfactbook.com/world/refining/",
+      "sort_order": 1
+    },
+    {
+      "id": 2,
+      "title": "energtx — refinery capacity, global rankings",
+      "url": "https://energtx.com/indicators/refinery-capacity-thousand-barrels-day",
+      "sort_order": 2
+    },
+    {
+      "id": 3,
+      "title": "EIA — US refining capacity decreased during 2025",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67807",
+      "sort_order": 3
+    },
+    {
+      "id": 4,
+      "title": "EIA — Petroleum refineries vary by level of complexity",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=8330",
+      "sort_order": 4
+    },
+    {
+      "id": 5,
+      "title": "EIA — Crude oil attributes at US refineries vary by region",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=8130",
+      "sort_order": 5
+    },
+    {
+      "id": 6,
+      "title": "Oil Sands Magazine — matching crude to refinery complexity",
+      "url": "https://www.oilsandsmagazine.com/technical/marketability-explained-matching-crude-to-refinery-complexity",
+      "sort_order": 6
+    },
+    {
+      "id": 7,
+      "title": "RBN Energy — USGC access to heavier crude",
+      "url": "https://rbnenergy.com/daily-posts/blog/us-gulf-coast-refiners-face-challenges-accessing-heavier-crude-oil",
+      "sort_order": 7
+    },
+    {
+      "id": 8,
+      "title": "Wikipedia — List of oil refineries",
+      "url": "https://en.wikipedia.org/wiki/List_of_oil_refineries",
+      "sort_order": 8
+    },
+    {
+      "id": 9,
+      "title": "Hydrocarbon Engineering — A reset for Europe's refineries",
+      "url": "https://www.hydrocarbonengineering.com/special-reports/29122025/a-reset-for-europes-refineries/",
+      "sort_order": 9
+    },
+    {
+      "id": 10,
+      "title": "Meduza — Russian refineries struck by drones",
+      "url": "https://meduza.io/en/feature/2026/06/29/ukrainian-drones-have-struck-nearly-every-major-russian-refinery-which-facilities-have-yet-to-be-hit",
+      "sort_order": 10
+    },
+    {
+      "id": 11,
+      "title": "Columbia CGEP — Where China gets its oil, 2025",
+      "url": "https://www.energypolicy.columbia.edu/where-china-gets-its-oil-crude-imports-in-2025-reveal-stockpiling-and-changing-fortunes-of-certain-suppliers-including-those-sanctioned/",
+      "sort_order": 11
+    },
+    {
+      "id": 12,
+      "title": "Hydrocarbon Processing — Dangote crude supply costs",
+      "url": "https://www.hydrocarbonprocessing.com/news/2026/08/as-nigerias-dangote-refinery-nears-record-ipo-investors-focus-on-oil-supply-costs/",
+      "sort_order": 12
+    },
+    {
+      "id": 13,
+      "title": "OIES — East of Suez refining outlook",
+      "url": "https://www.oxfordenergy.org/wpcms/wp-content/uploads/2025/02/East-of-Suez-Refining-Outlook-in-2025-and-Beyond.pdf",
+      "sort_order": 13
+    },
+    {
+      "id": 14,
+      "title": "EIA — Dangote drives Nigerian product shipments",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68004",
+      "sort_order": 14
+    }
+  ]
+}
