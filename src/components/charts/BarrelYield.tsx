@@ -1,4 +1,5 @@
-import { motion, useReducedMotion } from 'framer-motion'
+import { motion, useInView, useReducedMotion } from 'framer-motion'
+import { useRef } from 'react'
 
 const cuts = [
   { name: 'Naphtha', light: 22, heavy: 9 },
@@ -31,6 +32,10 @@ const heavyBands = bands('heavy')
 /** Straight-run yields side by side: where the heavy barrel's volume actually goes. */
 export function BarrelYield() {
   const reduced = useReducedMotion()
+  // Observe the HTML figure, not the SVG bands: IntersectionObserver does not
+  // report SVG children in every engine, which would strand the bands hidden.
+  const figureRef = useRef<HTMLElement>(null)
+  const inView = useInView(figureRef, { once: true, margin: '-40px' })
 
   const column = (band: ReturnType<typeof bands>, xPos: number) =>
     band.map((cut, i) => (
@@ -42,10 +47,8 @@ export function BarrelYield() {
           height={Math.max(1, cut.h - 2)}
           rx={2}
           fill={shades[i]}
-          initial={reduced ? false : { opacity: 0, scaleY: 0 }}
-          whileInView={{ opacity: 1, scaleY: 1 }}
-          viewport={{ once: true, margin: '-40px' }}
-          style={{ transformOrigin: `${xPos + WIDTH / 2}px ${cut.y + cut.h / 2}px` }}
+          initial={reduced ? false : { opacity: 0 }}
+          animate={reduced ? undefined : { opacity: inView ? 1 : 0 }}
           transition={{ duration: 0.5, delay: reduced ? 0 : i * 0.08 }}
         />
         {cut.h > 13 && (
@@ -63,7 +66,7 @@ export function BarrelYield() {
     ))
 
   return (
-    <figure className="m-0">
+    <figure className="m-0" ref={figureRef}>
       <svg
         viewBox="0 0 300 296"
         className="block h-auto w-full"
