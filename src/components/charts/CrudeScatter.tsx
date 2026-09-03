@@ -1,5 +1,5 @@
-import { motion, useReducedMotion } from 'framer-motion'
-import { useState } from 'react'
+import { motion, useInView, useReducedMotion } from 'framer-motion'
+import { useRef, useState } from 'react'
 import { grades } from '@/lib/atlas'
 
 const W = 620
@@ -25,10 +25,14 @@ const yTicks = [0, 1, 2, 3, 4, 5, 6]
 export function CrudeScatter() {
   const reduced = useReducedMotion()
   const [active, setActive] = useState<number | null>(null)
+  // The observer has to sit on an HTML element: IntersectionObserver does not
+  // report SVG children in every engine, which would strand the dots hidden.
+  const plotRef = useRef<HTMLDivElement>(null)
+  const inView = useInView(plotRef, { once: true, margin: '-40px' })
 
   return (
     <figure className="m-0">
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto" ref={plotRef}>
         <svg
           viewBox={`0 0 ${W} ${H}`}
           className="block h-auto w-full min-w-[440px]"
@@ -150,9 +154,8 @@ export function CrudeScatter() {
                   stroke="var(--csa-surface)"
                   strokeWidth={1.5}
                   className="cursor-pointer"
-                  initial={reduced ? false : { opacity: 0, scale: 0 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
+                  initial={reduced ? false : { opacity: 0 }}
+                  animate={reduced ? undefined : { opacity: inView ? 1 : 0 }}
                   transition={{ duration: 0.4, delay: reduced ? 0 : i * 0.015 }}
                   onMouseEnter={() => setActive(grade.id)}
                   onMouseLeave={() => setActive(null)}
